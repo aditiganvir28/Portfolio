@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body {
+background-color: #0f0c29;  /* fallback for old browsers */
+background-color: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background-color: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+background-image: url('./assets/img/banner-bg.png');
+background-position: top center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/*Navbar CSS Begins*/
+
+.Container{
+  width: 100%;
+  display: flex;
+ margin-top: 1%;
+  
+}
+
+.display-none{
+  display: flex;
+  width: 89%;
+}
+
+.portfolio-name{
+  width: 11%;
+  font-size: 150%;
+  font-weight: 700;
+  margin-left: 5%;
+  font-family: 'Bree Serif', serif;
+}
+
+.nav-components{
+  display: flex;
+  width: 60%;
+}
+
+.nav-components ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-components ul li{
+  margin: 0 5%;
+}
+
+.nav-components ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-components ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.connect-components{
+  width: 29%;
+  display: flex;
+  justify-content: end;
+}
+
+.icons{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons a{
+  color: white;
+}
+
+.icons a:hover{
+  font-size: larger;
+}
+
+.connect{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+ .connect button{
+  background-color: #0f0c29;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  border-color: white;
+  padding: 5%;
+  border-radius: 3%;
+ }
+ .connect button:hover{
+  background-color: white;
+  color: #0f0c29;
+  font-size: large;
+  font-weight: 500;
+  border-color: white;
+  padding: 5.5%;
+  border-radius: 3%;
+  cursor: pointer;
+ }
+
+ .sidebar{
+  display: none;
+ }
+
+ @media screen and (max-width: 850px) {
+  .Container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .portfolio-name{
+    width: 75%;
+  }
+
+  .container1{
+    width: 25%;
+    display: block;
+  }
+
+  .nav-components ul{
+    display: block;
+    padding: 0;
+  }
+
+  .nav-components ul li{
+    margin: 0 5%;
+    padding: 5% 0;
+  }
+
+  .connect-components{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .icons{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .icons a{
+    padding-right: 8%;
+  }
+
+  .connect{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5%;
+  }
+
+  .display-none{
+    display: none;
+  }
+
+  .sidebar{
+    display: inline;
+    margin-top: 3%;
+    margin-right: 5%;
+  }
+
+  .sidebar button{
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  
+}
+
+/*Navbar CSS Ends*/
+
+/*Banner CSS Begins*/
+.banner {
+  margin-top: 0;
+  padding: 7% 0 100px 0;
+  
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: transparent;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 25px;
+}
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/*Banner CSS Ends*/
+
+/************ Skills Css ************/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/*Projects CSS*/
+
+.project-container h2{
+  text-align: center;
+  font-size: 45px;
+	font-weight: 700;
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 4% 0;
+}
+
+.cards{
+  width: 25%;
+  background-color: rgb(10, 9, 9);
+  border-radius: 10%;
+}
+
+.image{
+  padding: 5%;
+}
+
+.cards img{
+  width: 100%;
+  border-radius: 5%;
+}
+
+.title{
+  margin-left: 10%;
+}
+
+.description{
+  margin-left: 10%;
+}
+
+.github-link{
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5%;
+  padding-right: 5%;
+}
+
+.github-link button {
+  color: #fff;
+  font-weight: 400;
+  font-size: 100%;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.github-link button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.github-link button:hover svg {
+  margin-left: 25px;
+}
+
+/*Contact CSS*/
+.contact {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 60px 0 100px 0;
+  width: 100%;
+}
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+	font-size: 200%;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 2.5% 5%;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 2% 5%;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+}
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
+}
+
+/*About CSS*/
+.About_page{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: #151515;
+  border-radius: 64px;
+  margin-bottom: 10%;
+}
+.About_heading{
+  padding-top: 2.5%;
+}
+.About_heading h2{
+  text-align: center;
+  font-size: 45px;
+	font-weight: 700;
+  margin-left: 5%;
+}
+
+.about_information{
+  /* display: flex; */
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.about_image{
+  width: 100%;
+  margin: 3% 0;
+}
+
+.about_image img{
+  width: 20%;
+  margin: 0 40%;
+  border-radius: 70%;
+}
+
+.about_content{
+  width:70%;
+  margin: 3% 15%;
+}
